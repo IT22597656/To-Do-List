@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Checkmate</string>
+    <string name="enter_details">Add Your Task</string>
+    <string name="enter_task">Enter Task</string>
+    <string name="x">X</string>
+    <string name="save">Save</string>
+    <string name="your_task">Your Task</string>
+    <string name="priority">Priority</string>
+    <string name="your_task_champion">Your task champion</string>
+    <string name="checkmate">Checkmate</string>
+    <string name="update_your_task">Update Your Task</string>
+</resources>

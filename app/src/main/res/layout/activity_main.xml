@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:textSize="40sp"
+            android:fontFamily="sans-serif"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="@string/your_task"
+            android:textColor="@color/white"
+             />
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:backgroundTint="#DADF4545"
+            android:id="@+id/deleteAll"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:text="@string/x"
+            android:textAllCaps="false"
+
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            tools:listitem="@layout/view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/recycler_view"/>
+
+        <Button
+            android:layout_gravity="center|bottom"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:id="@+id/add"
+            android:background="@drawable/circular_button"
+            android:layout_marginBottom="25dp"
+            android:textSize="25sp"
+            android:text="+"
+            android:textColor="@color/white"
+             />
+    </FrameLayout>
+</LinearLayout>
+
+
+

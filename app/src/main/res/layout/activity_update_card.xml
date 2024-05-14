@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UpdateCard"
+    android:padding="20dp"
+    android:background="@drawable/app_background"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="@string/update_your_task"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif"
+        android:textSize="36sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/create_title"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Task"
+        android:textColorHint="#BFBBBB"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/custom_edit_text"
+        />
+
+    <EditText
+        android:textColor="@color/black"
+        android:id="@+id/create_priority"
+        android:layout_height="wrap_content"
+        android:hint="Priority"
+        android:background="@drawable/custom_edit_text"
+        android:textColorHint="#BFBBBB"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="250dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:text="Update"
+            android:id="@+id/update_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+        <View
+
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+        />
+
+        <Button
+            android:backgroundTint="#ED1313"
+            android:text="Delete"
+            android:id="@+id/delete_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>
